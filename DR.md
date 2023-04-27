@@ -22,7 +22,7 @@ S3 is used by businesses and individuals to store and manage a wide variety of d
 
 It is commonly used for data archiving, data backup and recovery, content distribution, and cloud-native application data storage.
 
-S3 uses "Buckets" (folders) and "Objects" (files)
+- S3 uses "Buckets" (folders) and "Objects" (files)
 
 #
 # What is AWSCLI?
