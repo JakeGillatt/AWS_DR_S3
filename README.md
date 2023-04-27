@@ -1,7 +1,7 @@
 # What is DR?
 
 DR stands for Disaster Recovery plan. A disaster recovery plan is a documented strategy that outlines the procedures and systems necessary to recover and 
-restore critical technology infrastructure and operations following a cyber-attack, or other disruptive event that could destroy data and systems.
+restore critical technology infrastructure and operations following a cyber-attack, natural disaster, or other disruptive event that could destroy data and systems.
 
 The goal of a disaster recovery plan is to minimize the impact of the disaster on the organization's operations, and ensure the continuity of business operations 
 and services in the event of an unforeseen event. The plan typically includes detailed procedures for data backup and recovery, alternative communication systems, 
@@ -29,3 +29,10 @@ developers and system administrators to automate tasks and interact with AWS ser
 
 AWS CLI is a powerful tool that enables developers and system administrators to automate tasks and manage AWS resources more efficiently, helping to reduce 
 the time and effort required to manage complex cloud infrastructure.
+
+#
+# What is SDK?
+
+SDK stands for Software Development Kit, which is a collection of tools and resources that developers use to create software applications for a specific platform or programming language.
+
+SDKs provide developers with the necessary tools and resources to build applications that leverage the features and capabilities of a particular platform or programming language. They typically include APIs (Application Programming Interfaces), sample code, and documentation that help developers understand how to use the platform and build applications that integrate with it.
