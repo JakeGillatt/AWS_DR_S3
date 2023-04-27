@@ -67,3 +67,6 @@ To upload a file to the bucket: `aws s3 cp 'example-file' s3://jaketech221/`
 To download the file from the bucket: `aws s3 cp s3://jake-tech221/'example-file' 'local dir'/`
 - `aws s3 sync` can be used to sync all files in the bucket
 - `aws s3 rb 'bucket'` can be used to delete a bucket
+
+# Connecting to S3 Diagram:
+![S3-Diagram](https://user-images.githubusercontent.com/129315605/234900533-db5a0fae-74d1-4806-92d1-cb794b2e0d76.png)
