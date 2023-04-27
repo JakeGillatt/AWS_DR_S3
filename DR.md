@@ -68,5 +68,66 @@ To download the file from the bucket: `aws s3 cp s3://jake-tech221/'example-file
 - `aws s3 sync` can be used to sync all files in the bucket
 - `aws s3 rb 'bucket'` can be used to delete a bucket
 
+#
 # Connecting to S3 Diagram:
 ![S3-Diagram](https://user-images.githubusercontent.com/129315605/234900533-db5a0fae-74d1-4806-92d1-cb794b2e0d76.png)
+
+#
+# Using a python script with boto3 to carry out S3 related tasks:
+
+1. Install boto3 with `pip3 install boto3`
+2. Create a new python file with `sudo nano 'filename'.py` 
+3. Enter the code you require. Here is some examples:
+- Here is a script that creates a new bucket on S3:
+```
+import boto3
+
+AWS_REGION = "eu-west-1"
+
+client = boto3.client("s3", region_name=AWS_REGION)
+
+bucket_name = "jake-tech221"
+
+location = {'LocationConstraint': AWS_REGION}
+
+response = client.create_bucket(Bucket=bucket_name, CreateBucketConfiguration=location)
+
+print("Amazon S3 bucket has been created")
+```
+- Here is a script that uploads a file to the S3 bucket:
+```
+import boto3
+
+# Set up the S3 client
+s3 = boto3.client('s3')
+
+# Set up the local file path and S3 bucket/key
+local_file_path = 'test/test/test.txt'
+s3_bucket = 'jake-tech221'
+s3_key = 'test.txt'
+
+# Upload the file to S3
+s3.upload_file(local_file_path, s3_bucket, s3_key)
+
+print(f"{local_file_path} uploaded to s3://{s3_bucket}/{s3_key}")
+```
+- Here is a script that downloads a file from the S3 bucket:
+```
+import boto3
+
+# Set up the S3 client
+s3 = boto3.client('s3')
+
+# Set up the S3 bucket and file key
+s3_bucket = 'jake-tech221'
+s3_file_key = 'test.txt'
+
+# Set up the local file path to download to
+local_file_path = 'test.txt'
+
+# Download the file from S3 to the local directory
+s3.download_file(s3_bucket, s3_file_key, local_file_path)
+
+print(f"File s3://{s3_bucket}/{s3_file_key} downloaded to {local_file_path}")
+```
+
