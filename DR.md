@@ -38,3 +38,23 @@ the time and effort required to manage complex cloud infrastructure.
 SDK stands for Software Development Kit, which is a collection of tools and resources that developers use to create software applications for a specific platform or programming language.
 
 SDKs provide developers with the necessary tools and resources to build applications that leverage the features and capabilities of a particular platform or programming language. They typically include APIs (Application Programming Interfaces), sample code, and documentation that help developers understand how to use the platform and build applications that integrate with it.
+
+#
+# Configuring S3 access and installing AWSCLI
+
+After launching a Ubuntu instance with SSH:
+1. SSH into the instance and run the following commands
+```
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install python -y
+sudo apt install python3-pip
+alias python=python3 # This assigns a temporary variable
+sudo python3 -m pip install AWSCLI
+```
+2. Now run the command `aws configure`
+3. Enter your Access key, Secret key, Region (eu-west-1) and Output format (json)
+4. Use the command `aws s3 ls` to list everything on the s3 and test the connection. Where:
+- aws - the cloud name
+- s3 - the service name
+- ls - the command we wish to use
