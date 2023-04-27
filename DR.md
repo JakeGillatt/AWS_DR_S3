@@ -1,7 +1,7 @@
 # What is DR?
 
 DR stands for Disaster Recovery plan. A disaster recovery plan is a documented strategy that outlines the procedures and systems necessary to recover and 
-restore critical technology infrastructure and operations following a cyber-attack, or other disruptive event.
+restore critical technology infrastructure and operations following a cyber-attack, or other disruptive event that could destroy data and systems.
 
 The goal of a disaster recovery plan is to minimize the impact of the disaster on the organization's operations, and ensure the continuity of business operations 
 and services in the event of an unforeseen event. The plan typically includes detailed procedures for data backup and recovery, alternative communication systems, 
