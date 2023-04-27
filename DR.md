@@ -50,7 +50,7 @@ sudo apt upgrade -y
 sudo apt install python -y
 sudo apt install python3-pip
 alias python=python3 # This assigns a temporary variable
-sudo python3 -m pip install AWSCLI
+sudo python3 -m pip install AWSCLI # This installs the CLI
 ```
 2. Now run the command `aws configure`
 3. Enter your Access key, Secret key, Region (eu-west-1) and Output format (json)
