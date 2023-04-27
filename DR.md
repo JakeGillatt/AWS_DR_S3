@@ -24,7 +24,6 @@ It is commonly used for data archiving, data backup and recovery, content distri
 
 #
 # What is AWSCLI?
-
 AWS CLI (Command Line Interface) is a unified tool that provides a command-line interface for managing and interacting with various AWS services. It enables 
 developers and system administrators to automate tasks and interact with AWS services directly from their terminal or command-line interface.
 
