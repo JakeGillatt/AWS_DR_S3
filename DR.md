@@ -58,3 +58,12 @@ sudo python3 -m pip install AWSCLI # This installs the CLI
 - aws - the cloud name
 - s3 - the service name
 - ls - the command we wish to use
+
+#
+# Sending and receiving files from S3 to local
+
+To create a bucket on the S3: `aws s3 mb s3://jake-tech221` - this creates a bucket called jake-tech221
+To upload a file to the bucket: `aws s3 cp 'example-file' s3://jaketech221/`
+To download the file from the bucket: `aws s3 cp s3://jake-tech221/'example-file' 'local dir'/`
+- `aws s3 sync` can be used to sync all files in the bucket
+- `aws s3 rb 'bucket'` can be used to delete a bucket
